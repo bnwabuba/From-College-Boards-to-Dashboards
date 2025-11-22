@@ -1,19 +1,19 @@
 # From-College-Boards-to-Dashboards
 Turning Raw Student Data Into Actionable Insights for a Community College Using Amazon QuickSight &amp; Amazon Q
 
-Project Overview
+##Project Overview
 
 This project simulates a real-world consulting engagement with a U.S. community college seeking better visibility into its student population, enrollment patterns, and academic trends.
 
 The college leadership currently depends heavily on static reports from various departments—admissions, academic affairs, and student services. These reports are fragmented,  slow to update, and not optimized for decision-making.
 
-My job:
+My job: <br>
 Transform these disconnected sources into an interactive, intelligence-driven analytics dashboard using Amazon QuickSight and conversational analytics through Amazon Q Topics.
 
-The result:
+The result: <br>
 A centralized, dynamic, and AI-enabled insights portal that helps administrators make data-driven decisions about recruitment, resource allocation, and student success.
 
-Key Problem
+##Key Problem
 
 College leadership lacked:
 
@@ -26,7 +26,7 @@ College leadership lacked:
 Manually compiling answers took hours.
 This project solves that with automated dashboards + Q-powered analytics.
 
- Project Objectives
+ ##Project Objectives
 
 1. Clean & Prepare Dataset (student records, evaluation data, demographics)
 
@@ -42,14 +42,16 @@ This project solves that with automated dashboards + Q-powered analytics.
 
 7. Deliver 1-click stories inside QuickSight for leadership meetings
 
- Technologies Used
-Tool	                                            Purpose
-Amazon QuickSight	                                Data modeling, visualization, storytelling
-Amazon Q (Topics)	                                Natural language analytics & verified answers
-AWS IAM Identity Center	                          User and group access management
-Excel / CSV	                                      Base dataset preparation
+ ##Technologies Used
+Tool	                           |                                     Purpose              |
+|-------------------------------------|----------------------------------------------------------|
+|Amazon QuickSight	             |                   Data modeling, visualization, storytelling |
+|Amazon Q (Topics)	             |                   Natural language analytics & verified answers|
+|AWS IAM Identity Center	       |                   User and group access management|
+|Excel / CSV	                   |                  Base dataset preparation|
 
-Storytelling: The Journey From Raw Data to Data Insights
+Storytelling: The Journey From Raw Data to Data Insights  <br>
+
 1️⃣ Importing & Understanding the Dataset
 
 The dataset included:
@@ -74,10 +76,11 @@ Before building dashboards, I transformed business language to reflect how real 
 
 Examples of key transformations:
 
-Original Field	                         Updated Field	                               Reason
-HomeOfOrigin	                           NationalOrigin	                               Clearer meaning, globally recognized
-StartTerm	                               EnrollmentTerm	                               Matches higher-ed conventions
-EvalScore	                              InstructorEvaluationScore	                     Better analytics naming
+Original Field	                    |                  Updated Field	              |                           Reason    |
+|-------------------------------------|------------------------------|---------------------------------------------------------|
+|HomeOfOrigin	                       |    NationalOrigin	                  |             Clearer meaning, globally recognized |
+|StartTerm	                          |    EnrollmentTerm	                  |            Matches higher-ed conventions |
+|EvalScore	                          |   InstructorEvaluationScore	        |            Better analytics naming  |
 
 3️⃣ Calculated Fields
 
@@ -86,13 +89,13 @@ Used to better segment the student body (Freshman, Sophomore, Junior, Senior, Gr
 
 Formula example (QuickSight):
 
-ifelse(
-   {Credits} < 30, "Freshman",
-   {Credits} < 60, "Sophomore",
-   {Credits} < 90, "Junior",
-   {Credits} < 120, "Senior",
-   "Graduate"
-)
+ifelse(  <br>
+   {Credits} < 30, "Freshman", <br>
+   {Credits} < 60, "Sophomore",  <br>
+   {Credits} < 90, "Junior",   <br>
+   {Credits} < 120, "Senior",   <br>
+   "Graduate"       <br>
+)  <br>
 
 4️⃣ Building the Dashboard
 Main Insights Panels:
@@ -146,28 +149,29 @@ This allows leadership to ask questions without needing SQL or BI skills.
 
 I added a pie chart showing student type distribution:
 
-Student Type	    Count	         Percentage
-Freshman	         180	             18%
-Sophomore	         137	             14%
-Junior	           229	             23%
-Senior	           192	             19%
-Graduate	         262	             26%
+Student Type	 |    Count	   |      Percentage |
+|-------------|-------------|------------------|
+Freshman	      |   180	      |       18%  |
+Sophomore	     |    137	     |      14%  |
+Junior	        |   229	      |       23%  |
+Senior	       |    192	      |       19%  |
+Graduate	      |   262	      |       26%  |
 
 
- Story Block Added:
+
+ Story Block Added: <br>
 
 The student population shows a balanced academic distribution with a healthy progression pipeline. Graduate students form the largest segment at 26%, indicating strong interest in continuing education programs. Juniors and Seniors collectively make up 42% of the population, demonstrating positive retention toward upper-level standing. Meanwhile, Freshmen and Sophomores represent 32%, showing steady new student inflow.
 
-![Story Piechart](assets/story_piechart.png)
 
-📈 Final Deliverables
-✔️ Interactive QuickSight Dashboard
-✔️ Amazon Q Topic with Verified Questions
-✔️ Cleaned & Standardized Datasets
-✔️ Data Story for leadership presentation
+ Final Deliverables <br>
+✔️ Interactive QuickSight Dashboard  <br>
+✔️ Amazon Q Topic with Verified Questions  <br>
+✔️ Cleaned & Standardized Datasets  <br>
+✔️ Data Story for leadership presentation  <br>
 
 
-Impact
+  ## Impact
 
 This project demonstrates the power of cloud-native BI + AI in education:
 
@@ -179,7 +183,7 @@ This project demonstrates the power of cloud-native BI + AI in education:
 
 - Improves recruitment strategy, resource allocation & student success planning
 
-🔮 Future Enhancements
+  ## Future Enhancements
 
 - Add machine learning predictions (retention risk scoring)
 
@@ -192,7 +196,7 @@ This project demonstrates the power of cloud-native BI + AI in education:
 
 👤 Author
 
-Blessing Nwabuba
-Data Analyst • BI Developer • AWS Enthusiast
-📍 Lagos, Nigeria
+**Blessing Nwabuba**
+Data Analyst • BI Developer • AWS Enthusiast <br>
+📍 Lagos, Nigeria  <br>
 🔗 LinkedIn: [https://www.linkedin.com/in/blessing-nwabuba/]
