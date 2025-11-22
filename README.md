@@ -127,7 +127,7 @@ D. Academic Standing
 - Program-level performance
 
 📌 Screenshots go here:
-![Dashboard Overview](assets/dashboard_overview.png)
+![Dashboard Overview](From-College-Boards-to-Dashboards/dashboard_overview.png)
 
 5️⃣ Adding Amazon Q Topics (Natural Language Analytics)
 
@@ -143,7 +143,7 @@ Then configured:
 
 This allows leadership to ask questions without needing SQL or BI skills.
 
-![Verified Questions](assets/topic_verified_questions.png)
+![Verified Questions](From-College-Boards-to-Dashboards/Topics.png)
 
 6️⃣ Creating a Data Story (Narrative Insight)
 
@@ -157,7 +157,7 @@ Junior	        |   229	      |       23%  |
 Senior	       |    192	      |       19%  |
 Graduate	      |   262	      |       26%  |
 
-
+![Pie Chart](From-College-Boards-to-Dashboards/Pie Chart.png)
 
  Story Block Added: <br>
 
