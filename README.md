@@ -126,7 +126,7 @@ D. Academic Standing
 
 - Program-level performance
 
-📌 Screenshots go here:
+
 ![Dashboard Overview](From-College-Boards-to-Dashboards/dashboard_overview.png)
 
 5️⃣ Adding Amazon Q Topics (Natural Language Analytics)
